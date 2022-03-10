@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #350833;
+  font-family: "Lato", sans-serif;
+}
+
+/* 
+================
+Header
+================
+*/ 
+
+h1 {
+  font-size: 3rem;
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+/* 
+================
+Search box
+================
+*/ 
+
+form {
+  width: 90%;
+  max-width: 500px;
+  margin: 3em auto 1rem;
+}
+
+input {
+  margin: auto;
+  width: 100%;
+  border-radius: 100px;
+  border: none;
+  font-size: 1.3rem;
+  outline: none;
+  padding: 0.2em;
+  padding-left: 0.5em;
+  box-shadow: 0 0 10px 1px rgb(22, 22, 22);
+}
+
+/* 
+================
+Search results
+================
+*/ 
+
+.container {
+  width: 80%;
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 0.5em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px rgb(22, 22, 22);
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 20px;
+  background-color: rgb(221, 220, 220);
+  position: relative;
+  margin: 0;
+}
+
+.item {
+  background-color: #fff;
+  color: #1b1b1b;
+  padding: 0.5em;
+  border-radius: 5px;
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  column-gap: 0.7em;
+}
+
+.item:hover {
+  background-color: rgba(53, 8, 51, 0.5);
+}
+
+.item img {
+  display: block;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  grid-column: 1;
+}
+
+.item div {
+  grid-column: 2;
+}
+
+a {
+  color: rgb(0, 161, 0);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* 
+================
+Scrollbar
+================
+*/ 
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #b8b8b8;
+  border-radius: 50px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #8b8b8b;
+}
+
+/* 
+================
+Error messages
+================
+*/ 
+
+.error-message {
+  background-color: rgb(253, 212, 214);
+  border: 1px solid #f00;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 300px;
+  margin: auto;
+  padding: 0.5em;
+}
+
+.error-message h5 {
+  font-size: 1.5rem;
+}
+
+.no-user-message {
+  border-radius: 5px;
+  width: 70%;
+  max-width: 300px;
+  margin: auto;
+  padding: 0.3em;
+  background-color: #fff;
+  color: #f00;
+  font-weight: bold;
+}
